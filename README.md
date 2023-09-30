@@ -48,6 +48,7 @@ TASKKILL /F /PID  进程Id /T
 https://dev.azure.com/ktcto/ktx  
 https://gitcode.net/ktcto/ktx  
 https://gitee.com/ktcto/ktx    
+https://github.com/ktcto/ktx    
 
 ## 开源协议
 
@@ -55,8 +56,8 @@ KT开源社区 [ktcto.com](https://ktcto.com) 使用[MIT开源协议](https://op
 
 ## 免责声明
 
-<b><font color=red>用户使用本站资源（包括但不限于信息/代码/文章等）所产生的一切问题或违法行为，
-KT开源社区【不承担】任何责任。若不同意此条款，请勿使用本站资源，谢谢</font></b>
+<b><font color=red>用户使用本站资源所产生的一切问题或违法行为，
+KT开源社区 不承担 任何责任</font></b>
 
 
 
