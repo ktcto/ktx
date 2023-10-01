@@ -2,6 +2,9 @@
 
 ## 使用场景
 
+This project uses Microsoft open-source reverse-proxy YARP to bind virtual domain names 
+to any localhost:port for testing and debugging local projects.
+
 用于绑定虚拟域名到本机localhost端口号，方便开发调试本机各项目
 （支持各种编程语言C# Java Go……各种开发工具VS VSCode IDEA）
 
@@ -56,8 +59,8 @@ KT开源社区 [ktcto.com](https://ktcto.com) 使用[MIT开源协议](https://op
 
 ## 免责声明
 
-<b><font color=red>用户使用本站资源所产生的一切问题或违法行为，
-KT开源社区 不承担 任何责任</font></b>
+<font color=black>用户使用本站资源所产生的一切问题或违法行为，
+KT开源社区 不承担 任何责任</font>
 
 
 
