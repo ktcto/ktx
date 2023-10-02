@@ -16,8 +16,8 @@ to any localhost:port for testing and debugging local projects.
 127.0.0.1 k1demo.tf  
 127.0.0.1 k2demo.tf  
 ```
-2、cmd命令行或Mac终端运行 <b><font color=green>dotnet --info</font></b> 查看是否已安装 [.NET 7.0](https://dot.net) ，
-如果提示dotnet命令不存在，请先安装 [.NET 7.0](https://dot.net)
+2、cmd或Mac终端运行 <b><font color=green>dotnet --info</font></b> 查看是否安装 [.NET 7.0](https://dot.net) ，
+如果提示dotnet不存在，请先安装 [.NET 7.0](https://dot.net)
 
 3、下载 [ktx.zip](https://gitcode.net/ktcto/ktx/-/raw/master/zip/ktx.zip)
 解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（MacOS终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
@@ -26,7 +26,7 @@ to any localhost:port for testing and debugging local projects.
 dotnet ktx.dll
 Unhandled exception. System.Net.Sockets.SocketException (10013): 以一种访问权限不允许的方式做了一个访问套接字的尝试。
 ```
-请在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b>（IIS网站服务），重新运行本项目，看到以下信息表示运行成功：
+在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b> (IIS网站服务)，运行本项目，看到以下信息表示成功：
 ```
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://[::]:80
