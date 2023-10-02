@@ -10,34 +10,46 @@ to any localhost:port for testing and debugging local projects.
 
 ## 使用步骤
 
-1、在本机C:\Windows\System32\drivers\etc目录（MacOS的hosts文件在 /etc/hosts ）
+1、在本机C:\Windows\System32\drivers\etc目录（MacOS在 /etc/hosts ）
 用记事本打开hosts文件，绑定虚拟域名：   
 ```
-127.0.0.1 k1.t  
-127.0.0.1 k2.t  
-127.0.0.1 k3.t  
-127.0.0.1 k4.t  
-127.0.0.1 k5.t  
-127.0.0.1 demo108.com  
-127.0.0.1 demo308.com  
+127.0.0.1 k1demo.tf  
+127.0.0.1 k2demo.tf  
 ```
-2、下载 [ktx.zip](https://dev.azure.com/ktcto/0cf411fe-d4d3-4bd7-aea7-d8493a91adb1/_apis/git/repositories/11a57e73-a822-40e5-a4dd-a750ea792efa/items?path=/zip/ktx.zip&download=true)
-解压后，点击 <b><font color=green>ktx_start.bat</font></b> 或者 <b><font color=green>ktx.exe</font></b> 运行，
-如果80、443端口已被IIS占用，需要先在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b>（IIS网站服务），才能运行本项目
-（MacOS安装 https://dot.net 7.0后 <b>dotnet ktx.dll</b> 运行本项目）
+2、cmd命令行或Mac终端运行 <b><font color=green>dotnet --info</font></b> 查看是否已安装 [.NET 7.0](https://dot.net) ，
+如果提示dotnet命令不存在，请先安装 [.NET 7.0](https://dot.net)
 
-3、如果运行失败，用管理员权限运行cmd命令查看本机80、443端口被哪个进程占用，关闭对应进程
+3、下载 [ktx.zip](https://dev.azure.com/ktcto/0cf411fe-d4d3-4bd7-aea7-d8493a91adb1/_apis/git/repositories/11a57e73-a822-40e5-a4dd-a750ea792efa/items?path=/zip/ktx.zip&download=true)
+解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（MacOS终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
+如果80端口已被IIS或其它进程占用，报错信息：
+```
+dotnet ktx.dll
+Unhandled exception. System.Net.Sockets.SocketException (10013): 以一种访问权限不允许的方式做了一个访问套接字的尝试。
+```
+请在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b>（IIS网站服务），重新运行本项目，看到以下信息表示运行成功：
+```
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://[::]:80
+```
+
+4、如果运行失败，管理员权限运行cmd命令查看本机80、443端口被哪个进程占用，关闭对应进程
 ```
 netstat -ano | findstr 0.0.0.0:80  
 netstat -ano | findstr 0.0.0.0:443
 TASKKILL /F /IM "dotnet.exe" /T
 TASKKILL /F /PID  进程Id /T
 ``` 
- 
-4、运行本项目，浏览器访问 http://k1.t 和 http://k2.t 可以看到本机代理到不同的网站
+MacOS 终端查看本机80、443端口被哪个进程占用，关闭对应进程
+```
+sudo  lsof  -i  :80
+sudo  lsof  -i  :443
+sudo  kill  -9  进程Id
+```
 
-5、修改配置文件 <b><font color=blue>appsettings.json</font></b> 指向本机其它项目localhost:端口 及 你自定义的虚拟域名，  
-修改本机hosts文件增加自定义的虚拟域名，重新运行本项目，就可以用你的虚拟域名访问本机其它项目，用于开发调试等场景
+5、成功运行本项目后，浏览器访问 http://k1demo.tf 和 http://k2demo.tf 可以看到本机代理到不同的网站
+
+6、修改配置文件 <b><font color=blue>appsettings.json</font></b> 指向本机其它项目localhost:端口，
+可增加自定义虚拟域名（同时修改hosts文件），重新运行本项目，就可以用虚拟域名开发调试本机各项目了
 
 ## 技术原理
 
