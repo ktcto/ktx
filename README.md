@@ -26,7 +26,7 @@ to any localhost:port for testing and debugging local projects.
 dotnet ktx.dll
 Unhandled exception. System.Net.Sockets.SocketException (10013): 以一种访问权限不允许的方式做了一个访问套接字的尝试。
 ```
-在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b> (IIS网站服务)，运行本项目，看到以下信息表示成功：
+在任务管理器的服务列表中 右键停止 <b>W3SVC服务</b> (IIS网站服务)，运行本项目，看到以下信息表示运行成功：
 ```
 info: Microsoft.Hosting.Lifetime[14]
       Now listening on: http://[::]:80
