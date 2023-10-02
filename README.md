@@ -20,7 +20,7 @@ to any localhost:port for testing and debugging local projects.
 如果提示dotnet不存在，请先安装 [.NET 7.0](https://dot.net)
 
 3、下载 [ktx.zip](https://gitcode.net/ktcto/ktx/-/raw/master/zip/ktx.zip)
-解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（MacOS终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
+解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（Mac终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
 如果80端口已被占用，报错信息：
 ```
 dotnet ktx.dll
