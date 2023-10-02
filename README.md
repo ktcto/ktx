@@ -21,7 +21,7 @@ to any localhost:port for testing and debugging local projects.
 
 3、下载 [ktx.zip](https://gitcode.net/ktcto/ktx/-/raw/master/zip/ktx.zip)
 解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（MacOS终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
-如果80端口已被IIS或其它进程占用，报错信息：
+如果80端口已被占用，报错信息：
 ```
 dotnet ktx.dll
 Unhandled exception. System.Net.Sockets.SocketException (10013): 以一种访问权限不允许的方式做了一个访问套接字的尝试。
