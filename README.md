@@ -19,7 +19,7 @@ to any localhost:port for testing and debugging local projects.
 2、cmd命令行或Mac终端运行 <b><font color=green>dotnet --info</font></b> 查看是否已安装 [.NET 7.0](https://dot.net) ，
 如果提示dotnet命令不存在，请先安装 [.NET 7.0](https://dot.net)
 
-3、下载 [ktx.zip](https://dev.azure.com/ktcto/0cf411fe-d4d3-4bd7-aea7-d8493a91adb1/_apis/git/repositories/11a57e73-a822-40e5-a4dd-a750ea792efa/items?path=/zip/ktx.zip&download=true)
+3、下载 [ktx.zip](https://gitcode.net/ktcto/ktx/-/raw/master/zip/ktx.zip)
 解压后，点击 <b><font color=green>ktx_start.bat</font></b> 运行本项目（MacOS终端运行 <b><font color=green>dotnet ktx.dll</font></b>），
 如果80端口已被IIS或其它进程占用，报错信息：
 ```
