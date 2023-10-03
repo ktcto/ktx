@@ -10,7 +10,7 @@ to any localhost:port for testing and debugging local projects.
 
 ## 使用步骤
 
-1、在本机C:\Windows\System32\drivers\etc目录（MacOS在 /etc/hosts ）
+1、本机 C:\Windows\System32\drivers\etc 目录（MacOS在 /etc/hosts ）
 用记事本打开hosts文件，绑定虚拟域名：   
 ```
 127.0.0.1 k1demo.tf  
