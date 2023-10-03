@@ -52,7 +52,7 @@ sudo  kill  -9  进程Id
 
 ## 技术原理
 
-1、ktx基于微软开源YARP反向代理组件，监听80、443端口，配置虚拟域名反向代理到本机其它项目的端口号 
+1、ktx 基于微软开源YARP反向代理组件，监听80、443端口，配置虚拟域名反向代理到本机其它项目的端口号 
 https://github.com/microsoft/reverse-proxy  
 https://microsoft.github.io/reverse-proxy/articles/config-files.html
 
