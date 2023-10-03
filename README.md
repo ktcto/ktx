@@ -52,9 +52,9 @@ sudo  kill  -9  进程Id
 
 ## 技术原理
 
-1、ktx基于微软开源YARP反向代理组件，监听80、443端口，配置虚拟域名反向代理到本机其它项目的端口号 https://github.com/microsoft/reverse-proxy    
-
-2、https://microsoft.github.io/reverse-proxy/articles/config-files.html
+1、ktx基于微软开源YARP反向代理组件，监听80、443端口，配置虚拟域名反向代理到本机其它项目的端口号 
+https://github.com/microsoft/reverse-proxy  
+https://microsoft.github.io/reverse-proxy/articles/config-files.html
 
 ## KT开源社区 [ktcto.com](https://ktcto.com)
 
@@ -70,8 +70,7 @@ KT开源社区 [ktcto.com](https://ktcto.com) 使用[MIT开源协议](https://op
 
 ## 免责声明
 
-<font color=black>用户使用本站资源所产生的一切问题或违法行为，
-KT开源社区 不承担 任何责任</font>
+<font color=black>用户使用本站资源所产生的一切问题或违法行为，KT开源社区 不承担 任何责任</font>
 
 
 
